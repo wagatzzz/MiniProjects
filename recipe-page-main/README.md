@@ -1,8 +1,3 @@
-### Screenshot
-
-![](https://www.frontendmentor.io)
-
-
 ### Links
 
 
