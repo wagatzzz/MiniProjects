@@ -1,0 +1,44 @@
+{
+    "categories": [
+        {
+            "name": "Fruits",
+            "words": ["apple", "banana", "cherry", "date", "fig", "grape", "kiwi", "lemon", "mango", "orange", "peach", "pear", "plum", "quince"]
+        },
+        {
+            "name": "Animals",
+            "words": ["elephant", "giraffe", "kangaroo", "lion", "tiger", "bear", "zebra", "rhinoceros", "hippopotamus", "crocodile", "alligator", "penguin", "ostrich", "peacock"]
+        },
+        {
+            "name": "Countries",
+            "words": ["argentina", "brazil", "canada", "denmark", "egypt", "france", "germany", "hungary", "india", "japan", "kenya", "luxembourg", "mexico", "netherlands", "oman", "portugal", "qatar", "russia", "spain", "thailand", "uganda", "venezuela", "wales", "yemen", "zimbabwe"]
+        },
+        {
+            "name": "Colors",
+            "words": ["red", "blue", "green", "yellow", "orange", "purple", "pink", "brown", "black", "white", "gray", "violet", "indigo", "turquoise"]
+        },
+        {
+            "name": "Sports",
+            "words": ["soccer", "basketball", "tennis", "baseball", "cricket", "hockey", "golf", "volleyball", "rugby", "badminton", "swimming", "cycling", "boxing", "wrestling"]
+        },
+        {
+            "name": "Movies",
+            "words": ["inception", "titanic", "gladiator", "avatar", "matrix", "jaws", "rocky", "braveheart", "casablanca", "godfather", "goodfellas", "pulpfiction", "alien", "starwars"]
+        },
+        {
+            "name": "Plants",
+            "words": ["rose", "tulip", "daffodil", "sunflower", "lily", "orchid", "daisy", "marigold", "hibiscus", "lavender", "magnolia", "azalea", "carnation", "peony"]
+        },
+        {
+            "name": "Instruments",
+            "words": ["guitar", "piano", "violin", "drums", "flute", "trumpet", "saxophone", "cello", "clarinet", "harp", "accordion", "banjo", "mandolin", "trombone"]
+        },
+        {
+            "name": "Food",
+            "words": ["pizza", "burger", "pasta", "sushi", "taco", "salad", "soup", "steak", "sandwich", "kebab", "omelette", "curry", "noodles", "burrito"]
+        },
+        {
+            "name": "Drinks",
+            "words": ["coffee", "tea", "juice", "water", "milk", "lemonade", "soda", "smoothie", "milkshake", "cocktail", "beer", "wine", "whiskey", "champagne"]
+        }
+    ]
+}
