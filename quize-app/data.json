@@ -1,0 +1,179 @@
+{
+  "quiz": [
+    {
+      "subject": "HTML",
+      "questions": [
+        {
+          "question": "What does HTML stand for?",
+          "options": [
+            "Hyper Text Markup Language",
+            "Home Tool Markup Language",
+            "Hyperlinks and Text Markup Language",
+            "Hyper Tool Markup Language"
+          ],
+          "answer": "Hyper Text Markup Language"
+        },
+        {
+          "question": "Which HTML element is used to define the title of a document?",
+          "options": ["<head>", "<title>", "<meta>", "<body>"],
+          "answer": "<title>"
+        },
+        {
+          "question": "What is the correct HTML element for inserting a line break?",
+          "options": ["<break>", "<lb>", "<br>", "<line>"],
+          "answer": "<br>"
+        },
+        {
+          "question": "Which HTML attribute is used to define inline styles?",
+          "options": ["class", "style", "font", "styles"],
+          "answer": "style"
+        },
+        {
+          "question": "What is the correct HTML element for the largest heading?",
+          "options": ["<h1>", "<heading>", "<h6>", "<head>"],
+          "answer": "<h1>"
+        }
+      ]
+    },
+    {
+      "subject": "CSS",
+      "questions": [
+        {
+          "question": "What does CSS stand for?",
+          "options": [
+            "Colorful Style Sheets",
+            "Creative Style Sheets",
+            "Cascading Style Sheets",
+            "Computer Style Sheets"
+          ],
+          "answer": "Cascading Style Sheets"
+        },
+        {
+          "question": "Which property is used to change the background color?",
+          "options": ["bgcolor", "background-color", "color", "bg-color"],
+          "answer": "background-color"
+        },
+        {
+          "question": "Which CSS property controls the text size?",
+          "options": ["text-style", "font-style", "text-size", "font-size"],
+          "answer": "font-size"
+        },
+        {
+          "question": "How do you select an element with id 'header'?",
+          "options": ["header", "#header", ".header", "header-id"],
+          "answer": "#header"
+        },
+        {
+          "question": "Which property is used to change the font of an element?",
+          "options": ["font-style", "font-family", "font-weight", "font-variant"],
+          "answer": "font-family"
+        }
+      ]
+    },
+    {
+      "subject": "JavaScript",
+      "questions": [
+        {
+          "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+          "options": [
+            "<script src='script.js'>",
+            "<script href='script.js'>",
+            "<script ref='script.js'>",
+            "<script name='script.js'>"
+          ],
+          "answer": "<script src='script.js'>"
+        },
+        {
+          "question": "How do you write 'Hello World' in an alert box?",
+          "options": [
+            "alertBox('Hello World');",
+            "msg('Hello World');",
+            "msgBox('Hello World');",
+            "alert('Hello World');"
+          ],
+          "answer": "alert('Hello World');"
+        },
+        {
+          "question": "How do you create a function in JavaScript?",
+          "options": [
+            "function myFunction()",
+            "function:myFunction()",
+            "function = myFunction()",
+            "create function myFunction()"
+          ],
+          "answer": "function myFunction()"
+        },
+        {
+          "question": "How do you call a function named 'myFunction'?",
+          "options": [
+            "call myFunction()",
+            "call function myFunction()",
+            "myFunction()",
+            "run myFunction()"
+          ],
+          "answer": "myFunction()"
+        },
+        {
+          "question": "How to write an IF statement in JavaScript?",
+          "options": [
+            "if i == 5 then",
+            "if i = 5 then",
+            "if (i == 5)",
+            "if i = 5"
+          ],
+          "answer": "if (i == 5)"
+        }
+      ]
+    },
+    {
+      "subject": "Accessibility",
+      "questions": [
+        {
+          "question": "What does WCAG stand for?",
+          "options": [
+            "Web Content Accessibility Guidelines",
+            "Web Compliance Accessibility Guidelines",
+            "World Content Accessibility Guide",
+            "World Compliance Accessibility Guide"
+          ],
+          "answer": "Web Content Accessibility Guidelines"
+        },
+        {
+          "question": "Which attribute is used to provide an accessible name for an element?",
+          "options": ["id", "class", "name", "aria-label"],
+          "answer": "aria-label"
+        },
+        {
+          "question": "What is the purpose of 'alt' attribute in an <img> tag?",
+          "options": [
+            "To provide alternate text for the image",
+            "To change the image size",
+            "To specify the image source",
+            "To add a caption to the image"
+          ],
+          "answer": "To provide alternate text for the image"
+        },
+        {
+          "question": "Which of the following is a best practice for web accessibility?",
+          "options": [
+            "Use images instead of text for better readability",
+            "Ensure sufficient color contrast between text and background",
+            "Avoid using headers for structuring content",
+            "Disable keyboard navigation to simplify user experience"
+          ],
+          "answer": "Ensure sufficient color contrast between text and background"
+        },
+        {
+          "question": "What does ARIA stand for?",
+          "options": [
+            "Accessible Rich Internet Applications",
+            "Accessibility Rich Internet Applications",
+            "Accessible and Readable Internet Applications",
+            "Accessibility Resource Internet Applications"
+          ],
+          "answer": "Accessible Rich Internet Applications"
+        }
+      ]
+    }
+  ]
+}

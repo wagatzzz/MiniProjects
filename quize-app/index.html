@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Subject Selection</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="absolute top-4 right-4 flex items-center space-x-2">
+    <span class="text-gray-700 dark:text-gray-300">Light</span>
+    <label for="theme-toggle" class="relative cursor-pointer">
+      <input type="checkbox" id="theme-toggle" class="sr-only" />
+      <div class="toggle-track">
+        <div class="toggle-thumb"></div>
+      </div>
+    </label>
+    <span class="text-gray-700 dark:text-gray-300">Dark</span>
+  </div>
+
+  <div class="bg-white p-8 rounded shadow-md flex space-x-8" id="quiz-container">
+    <div class="flex flex-col justify-center">
+      <h1 class="text-3xl font-bold mb-4">Welcome to the Quiz!</h1>
+      <p class="text-lg">Choose a subject to start:</p>
+    </div>
+    <div class="flex flex-col space-y-4">
+      <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" onclick="selectSubject('HTML')">HTML</button>
+      <button class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500" onclick="selectSubject('CSS')">CSS</button>
+      <button class="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500" onclick="selectSubject('JavaScript')">JavaScript</button>
+      <button class="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500" onclick="selectSubject('Accessibility')">Accessibility</button>
+    </div>
+  </div>
+
+  <script>
+    function selectSubject(subject) {
+      localStorage.setItem('selectedSubject', subject);
+      window.location.href = 'quiz.html';
+    }
+  </script>
+</body>
+
+</html>
