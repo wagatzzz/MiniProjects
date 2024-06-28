@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Frontend Mentor Challenges</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+  
+    .header-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .card-bg {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+
+    .card {
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="header-bg text-white text-center py-12">
+    <h1 class="text-4xl font-bold">My Frontend Mentor Challenges</h1>
+    <p class="text-xl mt-2">A collection of my completed Frontend Mentor challenges</p>
+  </header>
+
+  <!-- Main content -->
+  <main class="flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+    
+    <div class="w-full max-w-4xl mb-12">
+      <img src="frontendmentor.png" alt="Frontend Mentor Screenshot" class="rounded-lg shadow-lg" style="width: 600px;">
+    </div>
+
+    <!-- List of challenges -->
+    <div class="w-full max-w-4xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card card-bg p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold mb-2">Blog-preview-card</h2>
+          <p class="mb-4">Used HTML and Tailwind CSS</p>
+          <a href="https://josblog-preview-card.netlify.app" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">View Challenge</a>
+        </div>
+
+        <div class="card card-bg p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold mb-2">Recipe-page</h2>
+          <p class="mb-4">Used HTML and Tailwind CSS</p>
+          <a href="https://josphine-recipe-page.netlify.app/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">View Challenge</a>
+        </div>
+
+        <div class="card card-bg p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold mb-2">Social-Links-Profile</h2>
+          <p class="mb-4">Used HTML and Tailwind CSS</p>
+          <a href="https://jossociallinks.netlify.app/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">View Challenge</a>
+        </div>
+
+        <div class="card card-bg p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-bold mb-2">Hang-man-game</h2>
+            <p class="mb-4">Used HTML, Tailwind CSS and JavaScript</p>
+            <a href="https://jos-hangman-game.netlify.app/" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">View Challenge</a>
+          </div>
+
+          <div class="card card-bg p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-bold mb-2">Quiz-Game</h2>
+            <p class="mb-4">Used HTML, Tailwind CSS and JavaScript</p>
+            <a href="https://jos-quiz-app.netlify.app" target="_blank" class="text-indigo-500 hover:text-indigo-700 font-semibold">View Challenge</a>
+          </div>
+        
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
