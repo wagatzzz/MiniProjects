@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman Game</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 </head>
 <body class="flex items-center justify-center h-screen bg-gray-100">
-    <div class="text-center">
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
         <div class="mb-5 text-2xl">
-            Category: <span id="category" class="font-bold"></span>
+            Category: <span id="category" class="font-bold text-emerald-600"></span>
         </div>
         <div id="word" class="mb-5 text-4xl tracking-widest"></div>
         <div class="w-full bg-gray-300 h-8 rounded mb-5">
@@ -20,8 +21,8 @@
             <div id="row2" class="flex justify-center space-x-1"></div>
             <div id="row3" class="flex justify-center space-x-1"></div>
         </div>
-        <div class="flex justify-center space-x-1">
-            <span id="points" class="text-lg font-bold">Points: 0</span>
+        <div class="flex justify-center space-x-1 mt-5">
+            <span id="points" class="text-lg font-bold text-emerald-600">Points: 0</span>
         </div>
     </div>
     <script src="index.js"></script>

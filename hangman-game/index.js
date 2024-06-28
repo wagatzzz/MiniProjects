@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const letter = String.fromCharCode(charCode).toUpperCase(); // Convert character code to uppercase letter
                 const button = document.createElement('button'); // Create a button element for the letter
                 button.textContent = letter; // Set the button text to the letter
-                button.classList.add('w-10', 'h-10', 'm-1', 'text-lg', 'border', 'border-gray-400', 'rounded', 'focus:outline-none'); // Apply Tailwind CSS classes to style the button
+                button.classList.add('w-10', 'h-10', 'm-1', 'text-lg', 'border', 'border-gray-400', 'rounded', 'focus:outline-none', 'hover:bg-gray-200', 'transition', 'duration-150'); // Apply Tailwind CSS classes to style the button
                 button.addEventListener('click', () => handleGuess(letter, randomWord, wordContainer, guessedLetters, button, progressBar)); // Add event listener to handle button click
                 rowElement.appendChild(button); // Append the button to the row element
             }
@@ -66,11 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     points += 10; // Increment points by 10 for correct guess
                     localStorage.setItem('hangmanPoints', points); // Save points in local storage
                     document.getElementById('points').textContent = points; // Update displayed points
-                    // Show success message and reload the page after a delay
+                    // Show confetti and reload the page after a delay
+                    confetti();
                     setTimeout(() => {
                         alert(`Congratulations! You guessed the word! You earned 10 points. Total points: ${points}`);
                         location.reload();
-                    }, 100);
+                    }, 2000);
                 }
             } else {
                 button.classList.add('bg-red-500', 'text-white'); // Mark incorrect guess button
@@ -86,7 +87,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
-
-      
     }
 });
