@@ -14,9 +14,9 @@ const Calculator = ({ onCalculate }) => {
   };
 
   return (
-    <div className="bg-white text-black p-4 rounded-l-lg w-full h-full shadow-md">
-      <div className="mb-4">
-        <label className="block mb-8 text-2xl font-bold text-teal-900">Mortgage Calculator</label>
+    <div className="bg-white text-black p-4 md:p-6 lg:p-8 rounded-l-lg w-full h-full shadow-md">
+      <div>
+        <label className="block mb-4 text-xl md:text-2xl font-bold text-teal-900">Mortgage Calculator</label>
         <label className="block text-gray-400">Mortgage Amount</label>
         <input
           type="number"
@@ -25,7 +25,7 @@ const Calculator = ({ onCalculate }) => {
           className="w-full p-2 border border-black rounded-md text-black"
         />
       </div>
-      <div className="flex space-x-4 mb-4">
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb-4">
         <div>
           <label className="block text-gray-400">Mortgage Term</label>
           <div className="flex items-center">
@@ -59,18 +59,19 @@ const Calculator = ({ onCalculate }) => {
         <label className="block text-gray-400">Mortgage Rate</label>
         <button
           onClick={handleRepayment}
-          className="hover:bg-gray-300 text-teal-900 font-bold py-2 px-4 rounded w-96 border border-black"
+          className="hover:bg-gray-300 text-teal-900 font-bold py-2 px-4 rounded w-full md:w-96 border border-black"
         >
           Repayment
         </button>
         <button
           onClick={handleInterestOnly}
-          className="hover:bg-gray-300 text-teal-900 font-bold py-2 px-4 rounded w-96 border border-black"
+          className="hover:bg-gray-300 text-teal-900 font-bold py-2 px-4 rounded w-full md:w-96 border border-black"
         >
           Interest Only
         </button>
       </div>
     </div>
+
   );
 };
 

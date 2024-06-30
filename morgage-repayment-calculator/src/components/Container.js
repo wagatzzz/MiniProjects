@@ -13,9 +13,13 @@ const Container = () => {
     if (type === 'repayment') {
       const monthlyRate = interestRate / 12;
       const numberOfPayments = years * 12;
+      
+      // Calculate monthly repayment
       const monthlyRepayment =
         (principal * monthlyRate) /
         (1 - Math.pow(1 + monthlyRate, -numberOfPayments));
+      
+      // Calculate total repayment
       const totalRepayment = monthlyRepayment * numberOfPayments;
 
       setResults({
@@ -24,6 +28,7 @@ const Container = () => {
         totalRepayment,
       });
     } else {
+      // Calculate total interest for interest-only
       const totalInterest = principal * interestRate * years;
 
       setResults({
@@ -34,7 +39,7 @@ const Container = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex flex-col md:flex-row justify-center items-center min-h-screen">
       <div className="w-full max-w-md">
         <Calculator onCalculate={calculateMortgage} />
       </div>
